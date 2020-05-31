@@ -11,7 +11,7 @@ public class UserDB {
      * @return true, if user exist
      */
     public boolean checkIfUserExistInDB(String email) {
-        String query = "SELECT COUNT(*) AS \"count\" FROM users WHERE email = '" + email + "'";
+        String query = "SELECT COUNT(*) FROM users WHERE email = '" + email + "'";
         System.out.println("QUERY :: " + query);
         long countOfUsers = (Long) DBUtility.getCellValue(query);
         return countOfUsers == 1;
