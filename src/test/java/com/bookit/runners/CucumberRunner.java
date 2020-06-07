@@ -10,8 +10,9 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         plugin = {
                 "json:target/cucumber.json"
+
         },
-        tags = "@ui",
+//        tags = "@ui",
         dryRun = false
 
 )
